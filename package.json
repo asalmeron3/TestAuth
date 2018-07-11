@@ -1,0 +1,27 @@
+{
+  "name": "practicing-auth0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/asalmeron3/TestAuth.git",
+  "author": "Arturo Salmeron <asalmeron3@gatech.edu>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "http-proxy-middleware": "^0.17.4",
+    "mongoose": "^4.13.9",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "node server.js",
+    "build": "node scripts/build.js",
+    "seed": "node scripts/seedUser.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installDeps": "yarn && cd client && yarn"
+  }
+}
